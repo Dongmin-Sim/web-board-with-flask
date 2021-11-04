@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}" > </script>
+    <script src="{{ url_for('static', filename='js/jquery-3.6.0.js') }}" > </script>
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/headers.css')}}" rel="stylesheet">
+    <!-- <link href="../static/bootstrap.min.css" rel="stylesheet"> -->
+
+    <title>미니프로젝트::</title>
+    {% block svg %}
+    {% endblock %}
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">홈</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">포스트</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">기술</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <a  role="button" class="btn btn-outline-light me-2" href="/login">로그인</a>
+            <a  role="button" class="btn btn-warning" href="/join">회원가입</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- main page -->
+    {% block home %}
+    {% endblock %}
+
+    <!-- post page -->
+    {% block post %}
+    {% endblock %}
+    
+
+
+    <!-- footer -->
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <!-- <footer class="footer mt-auto py-3 bg-light"> -->
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="text-muted">&copy; 2021 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  </body>
+</html>
