@@ -630,4 +630,6 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
+db_config.json
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,python,visualstudio,flask
