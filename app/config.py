@@ -5,11 +5,10 @@ dotenv.load_dotenv('../.env')
 
 
 class Config:
-    # SECRET_KEY = os.getenv('SECRET_KEY', 'my_precious_secret_key')
     SECRET_KEY = os.environ.get('SECRET_KEY')
     DEBUG = False
     # Swagger
-    RESTX_MASK_SWAGGER = False
+    # RESTX_MASK_SWAGGER = False
 
 
 class DevelopmentConfig(Config):
