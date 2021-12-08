@@ -1,4 +1,4 @@
-from db_connect import db
+from .. import db
 from datetime import datetime
 
 
