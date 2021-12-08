@@ -1,7 +1,5 @@
-from re import A
 from flask import Blueprint
-from flask.scaffold import F
-from flask_restful import Resource, Api
+from flask_restful import Api
 
 from .main import Main
 from .board import Board

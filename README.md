@@ -14,7 +14,12 @@ Flask를 활용하여 로그인, 게시글 포스트, 삭제 등 여러 기능�
 - MVC 패턴
 - restful한 API
 - 에러헨들러 사용
-- flask LoginManager
+- flask LoginManager, flask-Login
+- flask session
+- flask decorator
+- flask-WTF(폼)
+- flask-Mail
+- git branch 활용
 
 ## 주요 기능
 
