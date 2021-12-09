@@ -9,10 +9,31 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link href="{{url_for('static',filename='css/join.css')}}" rel="stylesheet">
+        <style>
+            .integrityerror{
+                color: red;
+                font-weight: 400;
+            }
+            .notsubmit {
+                color: red;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <br>  <p class="text-center">More bootstrap 4 components on <a href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com</a></p>
+            <br>  
+            <p class="text-center">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                      
+                      {% for category, message in messages %}
+                        <span class="{{ category }}">{{ message }}</span>
+                      {% endfor %}
+                      
+                    {% endif %}
+                {% endwith %}
+                <a href="/"> 홈페이지로 돌아가기</a>
+            </p>
             <hr>
             
 

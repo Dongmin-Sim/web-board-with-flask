@@ -9,7 +9,7 @@ class JoinForm(FlaskForm):
         DataRequired(), Length(min=8, max=15)])
     user_pw = PasswordField('User Password', validators=[
         DataRequired(), Length(min=8, max=20), EqualTo('re_password')])
-    re_password = PasswordField('Re Password', validators=[
+    re_password = PasswordField('Re Password', validators=[DataRequired(),
                                 Length(min=8, max=20)])
     interesting = SelectField('interesting', choices=[(
         'Front-end', 'front-end'), ('Back-end', 'back-end'), ('Data-engineer', 'data-engineer'), ('Product-Manager', 'Product-Manager')])
