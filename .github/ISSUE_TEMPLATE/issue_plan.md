@@ -1,3 +1,12 @@
+---
+name: issue_plan
+about: 개발 plan에 관한 이슈 템플릿입니다.
+title: "[Plan]"
+labels: ''
+assignees: Dongmin-Sim
+
+---
+
 >**[Title(제목) 작성 형식]**<Br>
 -형식: [날짜] 오피스 아워 이슈 : [이슈명]<Br>
 -예시: 210927 오피스 아워 이슈 : 기획 및 구상
