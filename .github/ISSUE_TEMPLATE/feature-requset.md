@@ -1,5 +1,5 @@
 ---
-name: feature requset
+name: Feature requset
 about: feature request 이슈 템플릿입니다.
 title: "[Feat]"
 labels: ''
