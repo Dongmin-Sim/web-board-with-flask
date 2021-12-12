@@ -4,3 +4,10 @@ body {
   padding: 0;
   height: 100%;
 }
+
+main {
+  min-height: 80vh;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+}

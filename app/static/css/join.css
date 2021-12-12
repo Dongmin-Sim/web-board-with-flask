@@ -28,3 +28,11 @@
   background-color: #171515;
   color: #fff;
 }
+
+.form-label {
+  margin-bottom: 0;
+}
+
+#submit {
+  width: 100%;
+}
