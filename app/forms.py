@@ -14,3 +14,11 @@ class JoinForm(FlaskForm):
     interesting = SelectField('interesting', choices=[(
         'Front-end', 'front-end'), ('Back-end', 'back-end'), ('Data-engineer', 'data-engineer'), ('Product-Manager', 'Product-Manager')])
     submit = SubmitField('submit')
+
+
+class LoginForm(FlaskForm):
+    user_id = StringField('User Id', validators=[
+        DataRequired(), Length(min=8)])
+    user_pw = PasswordField('User Password', validators=[
+        DataRequired(), Length(min=8), EqualTo('re_password')])
+    submit = SubmitField('submit')
